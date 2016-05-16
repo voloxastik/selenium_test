@@ -36,8 +36,6 @@ class TestStartPage(BaseTest):
     def test_3_legal_magnet_link(self):
         # type real magnet link, press magnet-enter button, get animation
         page = PlayerPage(self.driver)
-
-        print(page.page_title())
         page.get_player(self.test_magnet_link)
         time.sleep(5)
         self.assertEqual(page.page_title(),'bbb_sunflower_1080p_30fps_normal.mp4')
