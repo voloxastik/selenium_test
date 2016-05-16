@@ -40,6 +40,7 @@ class TestStartPage(BaseTest):
         print(page.page_title())
         page.get_player(self.test_magnet_link)
         time.sleep(5)
+        self.assertEqual(page.page_title(),'bbb_sunflower_1080p_30fps_normal.mp4')
         page.play()
         time.sleep(5)
         page.pause()
