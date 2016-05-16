@@ -44,7 +44,6 @@ class TestStartPage(BaseTest):
         page.play()
         time.sleep(5)
         page.pause()
-        print(page.page_title())
 
 
 
