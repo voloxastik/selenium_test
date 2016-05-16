@@ -1,3 +1,5 @@
+import os
+
 class BasePage(object):
 	def __init__(self,driver):
 		self.driver=driver
@@ -13,3 +15,5 @@ class BasePage(object):
 		elements=self.driver.find_elements_by_css_selector('*')
 		return elements
 
+	def get_screenshot(self):
+		os.system('screencapture /Users/sergey/Desktop/electron/next/selenium_test/screenshots/screenshot.png')
