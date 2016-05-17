@@ -14,7 +14,7 @@ class BaseTest(unittest.TestCase):
             cls.chromedriver_path = "./supply/drivers/chromedriver.exe"
             cls.options.binary_location = '../node_modules/electron-prebuilt/dist/electron.exe'
 
-        elif cls.os_name=='Darvin':
+        elif cls.os_name=='Darwin':
             cls.chromedriver_path = "./supply/drivers/chromedriver"
             cls.options.binary_location = '../node_modules/electron-prebuilt/dist/Electron.app/Contents/MacOS/Electron'
 
