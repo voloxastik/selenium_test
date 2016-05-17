@@ -1,11 +1,10 @@
 from selenium.webdriver.chrome.options import Options
 from selenium import webdriver
 import unittest
-import os,sys,platform
+import os,platform
 
 
 class BaseTest(unittest.TestCase):
-    path=os.getcwd()
     os_name=platform.system()
 
     @classmethod
