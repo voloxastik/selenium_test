@@ -1,6 +1,5 @@
 import unittest
 from baseTest import BaseTest
-from page_objects.basePage import BasePage   #todo do we need it??????
 from page_objects.PO_start_page import StartPage
 from page_objects.PO_player_page import PlayerPage
 
@@ -21,7 +20,7 @@ class TestStartPage(BaseTest):
         time.sleep(4) #todo   implement wait
         error_message_text=page.error_message()
         self.assertEqual(error_message_text,'Sorry! Something went wrong.')
-        page.get_screenshot()
+        page.get_screenshot('test1.png')
 
     def test_2_wrong_magnet_link(self):
         # type wrong magnet link, press magnet-enter button, get proper error message
